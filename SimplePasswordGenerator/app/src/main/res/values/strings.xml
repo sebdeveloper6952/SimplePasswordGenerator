@@ -2,6 +2,7 @@
     <string name="app_name">SimplePasswordGenerator</string>
     <string name="botonGenerar">Generar</string>
     <string name="pantallaClaveDefault">********</string>
+    <string name="pantallaLongitudDefault">8</string>
     <string name="textoLongitud">Longitud de Clave</string>
     <string name="tituloSplashScreen">splashScreen</string>
     <string name="textoSplash">Simple Password Generator</string>

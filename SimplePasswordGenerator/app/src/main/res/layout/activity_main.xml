@@ -53,14 +53,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="8"
+        android:text="@string/pantallaLongitudDefault"
         android:id="@+id/pantallaLongitud"
         android:textColor="#adadad"
         android:layout_alignWithParentIfMissing="false"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/botonGuardar"
         android:layout_marginTop="130dp"
-        android:layout_alignBaseline="@+id/textoLongitud" />
+        android:layout_alignBaseline="@+id/textoLongitud"
+        android:layout_alignParentEnd="false"
+        android:layout_alignEnd="@+id/botonGuardar"
+        android:textSize="24dp" />
 
     <EditText
         android:layout_width="match_parent"
