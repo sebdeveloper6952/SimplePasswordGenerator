@@ -73,5 +73,22 @@
         android:layout_below="@+id/barraLongitud"
         android:text="@string/pantallaClaveDefault"
         android:textColor="#adadad"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:editable="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numCheckbox"
+        android:id="@+id/numCheckbox"
+        android:layout_alignParentTop="false"
+        android:layout_alignStart="@id/botonGenerar" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simCheckbox"
+        android:id="@+id/simCheckbox"
+        android:layout_alignParentTop="false"
+        android:layout_alignStart="@id/botonGuardar" />
 </RelativeLayout>

@@ -7,4 +7,6 @@
     <string name="tituloSplashScreen">splashScreen</string>
     <string name="textoSplash">Simple Password Generator</string>
     <string name="botonGuardar">Guardar</string>
+    <string name="numCheckbox">Numeros</string>
+    <string name="simCheckbox">Simbolos</string>
 </resources>

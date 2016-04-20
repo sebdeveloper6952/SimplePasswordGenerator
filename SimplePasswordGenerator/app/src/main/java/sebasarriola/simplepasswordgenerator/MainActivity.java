@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.SeekBar;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.graphics.Typeface;
 
@@ -29,11 +30,21 @@ public class MainActivity extends AppCompatActivity {
         final Generator gen = new Generator(0);
 
         // crear boton de generar
-        Button generateButton = (Button)findViewById(R.id.botonGenerar);
-        generateButton.setTypeface(face);
+        Button botonGenerar = (Button)findViewById(R.id.botonGenerar);
+        botonGenerar.setTypeface(face);
+
+        // crear boton de guardar
+        Button botonGuardar = (Button)findViewById(R.id.botonGuardar);
+        botonGuardar.setTypeface(face);
 
         // crear la barra que sirve para especificar la longitud de clave
         final SeekBar barraLongitud = (SeekBar)findViewById(R.id.barraLongitud);
+
+        // crear checkboxes
+        CheckBox numCheckbox = (CheckBox)findViewById(R.id.numCheckbox);
+        numCheckbox.setTypeface(face);
+        CheckBox simCheckbox = (CheckBox)findViewById(R.id.simCheckbox);
+        simCheckbox.setTypeface(face);
 
         // creara la pantalla donde se visualiza el valor de la longitud
         final TextView pantallaLongitud = (TextView)findViewById(R.id.pantallaLongitud);
@@ -64,16 +75,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         // crear event listener para el click en el boton de generar
-        generateButton.setOnClickListener(
+        botonGenerar.setOnClickListener(
                 new Button.OnClickListener()
                 {
                     public void onClick(View v)
                     {
                         TextView outputScreen = (TextView)findViewById(R.id.pantallaClave);
                         outputScreen.setTypeface(face);
-                        outputScreen.setText(gen.GenerarClave(barraLongitud.getProgress() + 8));
+                        outputScreen.setText(gen.GenerarClave(barraLongitud.getProgress() + 8, false, true));
                     }
                 }
         );
     }
+
+    // crear event listeners para las checkboxes
+
 }
