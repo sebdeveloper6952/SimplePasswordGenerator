@@ -64,7 +64,7 @@
         android:layout_alignEnd="@+id/botonGuardar"
         android:textSize="24dp" />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pantallaClave"
@@ -80,15 +80,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/numCheckbox"
+        android:textColor="#adadad"
+        android:textSize="18dp"
         android:id="@+id/numCheckbox"
-        android:layout_alignParentTop="false"
-        android:layout_alignStart="@id/botonGenerar" />
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/botonGenerar"
+        android:layout_marginTop="15dp"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/simCheckbox"
+        android:textColor="#adadad"
+        android:textSize="18dp"
         android:id="@+id/simCheckbox"
-        android:layout_alignParentTop="false"
-        android:layout_alignStart="@id/botonGuardar" />
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/botonGuardar"
+        android:layout_marginTop="15dp"/>
+
 </RelativeLayout>
